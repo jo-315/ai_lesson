@@ -1,6 +1,14 @@
 # Model
 
-## 環境構築
-起動コマンド `docker-compose up`
+機械学習・深層学習のモデルを構築して自由に遊びましょ！
 
-URL `localhost:8887`
+## システム構成
+
+dockerでjupterlabを立ち上げて開発を行う
+
+## 環境構築
+起動コマンド  
+`docker-compose up`
+
+URL  
+`localhost:8887`
