@@ -2,7 +2,7 @@ numpy==1.19.5
 matplotlib==3.3.3
 scipy==1.6.0
 
-# CycleGAN
+# CycleGAN TODO: updata
 torch>=1.4.0
 torchvision>=0.5.0
 dominate>=2.4.0
