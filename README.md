@@ -19,7 +19,7 @@
 `docker-compose up`
 
 - バックグラウンド  
-`docker-compose up`
+`docker-compose up -d`
 
 - 停止  
 `docker-compose stop`
