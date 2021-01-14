@@ -10,6 +10,8 @@ vue.js
 ### バックエンド
 Django
 
+### DB
+postgres
 ## 環境構築
 起動コマンド  
 `docker-compose up`
