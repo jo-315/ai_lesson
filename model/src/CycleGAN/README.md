@@ -2,6 +2,7 @@
 https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
 1. `monet2photo`を用いて遊んでみる
+zipファイルをダウンロード(https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/)
 2. 自分の写真で画像生成
 
 ## Configuration
