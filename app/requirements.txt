@@ -1,2 +1,4 @@
 Django==3.1.5
 psycopg2==2.8.6
+uwsgi==2.0.19.1
+djangorestframework==3.12.2

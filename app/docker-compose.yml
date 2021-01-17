@@ -35,7 +35,7 @@ services:
       - "8000:8000"
     depends_on:
       - postgres
-    command: python3 manage.py runserver 0.0.0.0:8000
+    command: 'sh /start_django.sh'
 
   postgres:
     image: postgres
