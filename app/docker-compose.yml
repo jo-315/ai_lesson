@@ -10,20 +10,20 @@ services:
       - 8000:8000
     volumes:
       - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
-      # - ./back/static:/var/www/static/
+      - ./aiapp/static:/var/www/static/
     depends_on:
       - django
 
-  vue:
-    build:
-      context: .
-      dockerfile: "./Dockerfile-nodejs"
-    volumes:
-      - ./front/ai-project:/app/ai-project/:cached
-      - ./front/node_modules:/app/node_modules
-    ports:
-      - "8080:8080"
-    command: npm run serve
+  # vue:
+  #   build:
+  #     context: .
+  #     dockerfile: "./Dockerfile-nodejs"
+  #   volumes:
+  #     - ./front/ai-project:/app/ai-project/:cached
+  #     - ./front/node_modules:/app/node_modules
+  #   ports:
+  #     - "8080:8080"
+  #   command: npm run serve
 
   django:
     build:
@@ -32,10 +32,10 @@ services:
     volumes:
       - .:/code
     ports:
-      - "8000:8000"
+      - 8001:8001
     depends_on:
       - postgres
-    command: 'sh /start_django.sh'
+    command: 'sh ./start_django.sh'
 
   postgres:
     image: postgres

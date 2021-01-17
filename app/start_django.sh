@@ -2,8 +2,12 @@
 
 sleep 5
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py collectstatic --noinput
+# connect to DB
+# python manage.py makemigrations
+# python manage.py migrate
 
-uwsgi --socket :8001 --module mysite.wsgi
+# connect to nginx
+uwsgi --socket :8001 --module aiapp.wsgi
+
+# start without nginx
+# python3 manage.py runserver localhost:8001
