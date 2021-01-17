@@ -1,0 +1,11 @@
+FROM node:15.5.1-alpine3.10
+
+WORKDIR /app
+
+RUN npm install -g @vue/cli
+
+COPY ./front/ai-project ./ai-project
+
+WORKDIR /app/ai-project
+
+RUN npm install
