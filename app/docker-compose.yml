@@ -31,8 +31,8 @@ services:
       dockerfile: "./Dockerfile-django"
     volumes:
       - .:/code
-    ports:
-      - 8001:8001
+    expose:
+      - "8001"
     depends_on:
       - postgres
     command: 'sh ./start_django.sh'

@@ -7,7 +7,7 @@ sleep 5
 # python manage.py migrate
 
 # connect to nginx
-uwsgi --socket :8001 --module aiapp.wsgi
+uwsgi --ini ./uwsgi.ini
 
 # start without nginx
 # python3 manage.py runserver localhost:8001
