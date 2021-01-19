@@ -11,6 +11,7 @@ services:
     volumes:
       - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
       - ./aiapp/static:/var/www/static/
+      - ./nginx:/var/log/nginx
     depends_on:
       - django
 
@@ -31,8 +32,12 @@ services:
       dockerfile: "./Dockerfile-django"
     volumes:
       - .:/code
-    expose:
-      - "8001"
+    # expose:
+    #   - "8001"
+    ports:
+      - "8001:8001"
+    ports:
+      - "8010:8010"
     depends_on:
       - postgres
     command: 'sh ./start_django.sh'
