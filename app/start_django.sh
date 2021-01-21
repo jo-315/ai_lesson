@@ -10,4 +10,4 @@ sleep 5
 uwsgi --ini ./uwsgi.ini
 
 # start without nginx
-# python3 manage.py runserver localhost:8001
+# python3 manage.py runserver 0.0.0.0:8001

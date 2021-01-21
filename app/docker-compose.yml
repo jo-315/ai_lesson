@@ -36,8 +36,6 @@ services:
     #   - "8001"
     ports:
       - "8001:8001"
-    ports:
-      - "8010:8010"
     depends_on:
       - postgres
     command: 'sh ./start_django.sh'
