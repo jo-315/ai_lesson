@@ -30,6 +30,12 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    # Local apps (※add original app. In apps.py.)
+    'django_demo.apps.DjangoDemoConfig',
+
+    # Third party apps
+
+    # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
