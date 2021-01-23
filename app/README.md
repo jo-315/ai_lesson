@@ -36,3 +36,7 @@ URL
 `http://0.0.0.0:8000/`
 
 ※セットアップ参考資料  https://docs.docker.jp/compose/django.html
+
+## django
+新しいアプリケーションの作成
+`python manage.py startapp "app's name"`
