@@ -1,18 +1,5 @@
 # Application
 
-構築したモデルをアプリケーションから触って遊べるようにしましょ！
-
-## フォルダ構成
-- aiapp  
-Djangoでバックエンドの実装
-
-- front  
-vue.jsでフロントエンドの実装
-
-- nginx  
-サーバー
-TODO 設定の最適化を行う（見城）
-
 ## システム構成
 
 参考 `https://qiita.com/masa0209/items/50375039719def0df3b5`
@@ -28,12 +15,34 @@ Django
 
 ### DB
 postgres
+
+## フォルダ構成
+- aiapp  
+Djangoのsettings
+
+- front  
+vue.jsでフロントエンドの実装
+
+- nginx  
+サーバー（URLに応じて振り分けを行う）
+
+### demoアプリケーション
+- django demo  
+djangoで動的HTMLを返す  
+`http://localhost:8000/django_demo/`
+
+- model demo  
+djangoからDB（postgres）に接続
+
 ## 環境構築
+dockerのビルド  
+`docker-compose build`
+
 起動コマンド  
 `docker-compose up`
 
 URL  
-`http://0.0.0.0:8000/`
+`http://localhost:8000/`
 
 ※セットアップ参考資料  https://docs.docker.jp/compose/django.html
 
