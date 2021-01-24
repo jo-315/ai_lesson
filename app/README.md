@@ -2,7 +2,7 @@
 
 ## システム構成
 
-参考 `https://qiita.com/masa0209/items/50375039719def0df3b5`
+参考 https://qiita.com/masa0209/items/50375039719def0df3b5
 
 ### フロントエンド
 vue.js
@@ -18,7 +18,10 @@ postgres
 
 ### Proxyサーバー
 nginx  
-プロキシサーバーとは https://www.kagoya.jp/howto/network/reverse-proxy/
+プロキシサーバーとは  
+- https://www.kagoya.jp/howto/network/reverse-proxy/
+- https://tech-lab.sios.jp/archives/9922
+
 ## フォルダ構成
 - aiapp  
 Djangoのsettings
