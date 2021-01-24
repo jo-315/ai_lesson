@@ -55,3 +55,13 @@ URL
 ## django
 新しいアプリケーションの作成
 `python manage.py startapp "app's name"`
+
+## Vue.js
+
+### vue-router
+- ルーティングの管理  
+- router.jsでURLと紐付ける  
+- https://qiita.com/hshota28/items/765cf903f055754f7557
+
+### dockerのコンテナ
+`docker-compose exec vue /bin/ash `
