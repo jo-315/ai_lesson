@@ -16,6 +16,9 @@ Django
 ### DB
 postgres
 
+### Proxyサーバー
+nginx  
+プロキシサーバーとは https://www.kagoya.jp/howto/network/reverse-proxy/
 ## フォルダ構成
 - aiapp  
 Djangoのsettings
