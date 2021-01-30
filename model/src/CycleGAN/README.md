@@ -12,4 +12,6 @@ zipファイルをダウンロード(https://people.eecs.berkeley.edu/~taesung_p
 ## テスト（画像生成）
 
 ## 参考
-- https://www.slideshare.net/meownoisy/cyclegan-192304094
+- https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+- https://www.slideshare.net/meownoisy/cyclegan-192304094  
+- https://qiita.com/hikaru-light/items/98d06b21b4f3e2bb6ca4  
